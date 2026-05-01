@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Playfair+Display:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -208,10 +209,34 @@
 <footer>
   <div class="footer-name">Rana Kausar · رعنا کوثر</div>
   <p>Urdu Author · Columnist · Storyteller</p>
-  <p style="margin-top:1rem;font-size:1rem;color: #1a0f0a;">© 2026 Rana Kausar · All Rights Reserved</p>
+  
+  <div class="footer-dev">
+    <span>Developed by <strong>Tooba Shaikh</strong></span>
+    
+    <div class="footer-socials">
+      
+      <a href="https://www.linkedin.com/in/tooba5haikh" id="dev-linkedin" class="social-icon" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      
+      <a href="mailto:toobashaikh2803@gmail.com" id="dev-email" class="social-icon" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      
+      <a href="https://github.com/toobashaikh28" id="dev-github" class="social-icon" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+
+    <p style="margin-top:1rem;font-size:1rem;color:#1a0f0a;">© <span id="year"></span> Rana Kausar · All Rights Reserved</p>
+    
+</div>
 </footer>
 
 <script src="main.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
