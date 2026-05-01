@@ -446,7 +446,6 @@ section {
   font-family: 'Cormorant Garamond', serif;
   font-size: 0.9rem;
   color: var(--text-muted);
-  flex-wrap: wrap;
 }
 
 .detail-row .icon {
